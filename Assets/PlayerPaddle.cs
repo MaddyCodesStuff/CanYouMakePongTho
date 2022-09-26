@@ -15,7 +15,6 @@ public class PlayerPaddle : MonoBehaviour
     void Update()
     {
         var movement = Input.GetAxis("Mouse Y") * speed ;
-        Debug.Log(movement);
         if(gameObject.transform.position.y >= 4 && movement >= 0){
             movement = 0;
         }
